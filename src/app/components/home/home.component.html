@@ -1,0 +1,16 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Peliculas</h1>
+    <p class="lead">Aplicacion de peliculas</p>
+  </div>
+</div>
+
+<div class="container">
+  <br>
+
+
+  <app-mosaico [peliculas]="cartelera|slice:0:6" titulo="Peliculas en cartelera"></app-mosaico>
+  <app-mosaico [peliculas]="populares|slice:0:6" titulo="Populares"></app-mosaico>
+  <app-mosaico [peliculas]="kids|slice:6:12" titulo="Para niños"></app-mosaico>
+
+</div>
